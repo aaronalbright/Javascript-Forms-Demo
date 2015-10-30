@@ -17,8 +17,7 @@
 		<section class="col-md-12">
 			<h1>The Suicide Squad: A Quiz</h1>
 			<p>The Suicide Squad is a fictional organzation of  villians in the DC Comics universe. An anti-hero "strike" team, the Suicde Squad gets its name from the unlikely survival of the members. The squad is composed of villians whose options purpose is to either work for the government in deadly covert operations or rot in prison. If they divert from their assignment, a bomb implant will detonate. No questions asked. Since the comic series has risen in popularity. A feature film starring Jared Leto and Will Smith, among others, is set for release in 2016. What better way to brush up on the squad's lore than with a simple quiz? You'll find everything you need on the <a href="https://en.wikipedia.org/wiki/Suicide_Squad" target="_blank"> Wikipedia page.</a></p>   
-			<form>
-				
+			<form id="myForm" action="/echo/html/" method="post">
 				<div class="form-group">
 				<label for="questionOne">What is the Suicide Squad's alternate name?</label>
 				<input class="form-control" type="text" name="questionOne" id="questionOne">
@@ -39,7 +38,7 @@
 				<!-- radio question -->
 				<div class="radio">
 				<label>
-					<input type="radio" name="questionFour" id="questionFour1" value="flase">1959</label>
+					<input type="radio" name="questionFour" id="questionFour1" value="false">1959</label>
 					</div>
 					<div class="radio">
 				<label>
@@ -47,11 +46,11 @@
 					</div>
 					<div class="radio">
 				<label>
-					<input type="radio" name="questionFour" id="questionFour3" value="flase">1992</label>
+					<input type="radio" name="questionFour" id="questionFour3" value="false">1992</label>
 					</div>
 						<div class="radio">
 			<label>
-			<input type="radio" name="questionFour" id="questionFour4" value="flase">1989</label>
+			<input type="radio" name="questionFour" id="questionFour4" value="false">1989</label>
 				</div>
 		</div>
 				
@@ -60,33 +59,33 @@
 				<!-- checkbox question -->
 					<div class="checkbox">
 				<label>
-					<input type="checkbox" name="questionFive" id="questionFive1">Deadshot</label>
+					<input type="checkbox" name="questionFive" id="questionFive1" value="true1">Deadshot</label>
 					</div>
 					<div class="checkbox">
 				<label>
-				<input type="checkbox" name="questionFive" id="questionFive2">Black Spider</label>
+				<input type="checkbox" name="questionFive" id="questionFive2" value="false">Black Spider</label>
 					</div>
 					<div class="checkbox">
 				<label>
-				<input type="checkbox" name="questionFive" id="questionFive3">Black Manta</label>
+				<input type="checkbox" name="questionFive" id="questionFive3" value="true2">Black Manta</label>
 					</div>
 					<div class="checkbox">
 				<label>
-					<input type="checkbox" name="questionFive" id="questionFive4">Reverse-Flash</label>
+					<input type="checkbox" name="questionFive" id="questionFive4" value="true3">Reverse-Flash</label>
 					</div>
 					<div class="checkbox">				
 				<label>
-				<input type="checkbox" name="questionFive" id="questionFive5">El Diablo</label>
+				<input type="checkbox" name="questionFive" id="questionFive5" value="false">El Diablo</label>
 					</div>
 					<div class="checkbox">
 				<label>
-				<input type="checkbox" name="questionFive" id="questionFive6">Joker's Daughter</label>
+				<input type="checkbox" name="questionFive" id="questionFive6" value="true4">Joker's Daughter</label>
 				</div>
 				</div>
 				
 				<div class="form-group">
 				<label for="questionSix">Who is the director of the Suicide Squad?</label>
-				<select class="form-control" id="questionSix">
+				<select name="questionSix" class="form-control" id="questionSix">
 					<option>Choose...</option>
 					<option>Sarge Steel</option>
 					<option>Lex Luther</option>
@@ -100,7 +99,7 @@
 				</div>
 				
 				<div class="form-group">
-				<input class="btn btn-success" type="button" value="Submit">
+				<input class="btn btn-success" type="submit" value="Submit">
 				<input class="btn btn-default" type="reset" value="Start Over">
 				</div>
 				
@@ -112,5 +111,6 @@
 
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/form-processor.js"></script>
 </body>
 </html>
