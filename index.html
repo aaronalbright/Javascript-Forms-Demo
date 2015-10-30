@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Basic Bootstrap File</title>
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+
+
+<div class="container">
+	<div class="row">
+		<section class="col-md-12">
+			<h1>The Suicide Squad: A Quiz</h1>
+			<p>The Suicide Squad is a fictional organzation of  villians in the DC Comics universe. An anti-hero "strike" team, the Suicde Squad gets its name from the unlikely survival of the members. The squad is composed of villians whose options purpose is to either work for the government in deadly covert operations or rot in prison. If they divert from their assignment, a bomb implant will detonate. No questions asked. Since the comic series has risen in popularity. A feature film starring Jared Leto and Will Smith, among others, is set for release in 2016. What better way to brush up on the squad's lore than with a simple quiz? You'll find everything you need on the <a href="https://en.wikipedia.org/wiki/Suicide_Squad" target="_blank"> Wikipedia page.</a></p>   
+			<form>
+				
+				<div class="form-group">
+				<label for="questionOne">What is the Suicide Squad's alternate name?</label>
+				<input class="form-control" type="text" name="questionOne" id="questionOne">
+				</div>
+				
+				<div class="form-group">
+				<label for="questionTwo">What is the name of the squad's operation base?</label>
+				<input class="form-control" type="text" name="questionTwo" id="questionTwo">
+				</div>
+				
+				<div class="form-group">
+				<label for="questionThree">Describe the background of the first volume of the Suicide Squad</label>
+				<textarea class="form-control" name="questionThree" id="questionThree"></textarea>
+				</div>
+				
+				<div class="form-group">
+				<p><strong>What year did the <em>second</em> version of the squad appear?</strong></p>
+				<!-- radio question -->
+				<div class="radio">
+				<label>
+					<input type="radio" name="questionFour" id="questionFour1" value="flase">1959</label>
+					</div>
+					<div class="radio">
+				<label>
+					<input type="radio" name="questionFour" id="questionFour2" value="true">1987</label>
+					</div>
+					<div class="radio">
+				<label>
+					<input type="radio" name="questionFour" id="questionFour3" value="flase">1992</label>
+					</div>
+						<div class="radio">
+			<label>
+			<input type="radio" name="questionFour" id="questionFour4" value="flase">1989</label>
+				</div>
+		</div>
+				
+				<div class="form-group">
+				<p><strong>Who were some of the notable team members in 2014's <em>The New Suicide Squad?</em></strong></p>
+				<!-- checkbox question -->
+					<div class="checkbox">
+				<label>
+					<input type="checkbox" name="questionFive" id="questionFive1">Deadshot</label>
+					</div>
+					<div class="checkbox">
+				<label>
+				<input type="checkbox" name="questionFive" id="questionFive2">Black Spider</label>
+					</div>
+					<div class="checkbox">
+				<label>
+				<input type="checkbox" name="questionFive" id="questionFive3">Black Manta</label>
+					</div>
+					<div class="checkbox">
+				<label>
+					<input type="checkbox" name="questionFive" id="questionFive4">Reverse-Flash</label>
+					</div>
+					<div class="checkbox">				
+				<label>
+				<input type="checkbox" name="questionFive" id="questionFive5">El Diablo</label>
+					</div>
+					<div class="checkbox">
+				<label>
+				<input type="checkbox" name="questionFive" id="questionFive6">Joker's Daughter</label>
+				</div>
+				</div>
+				
+				<div class="form-group">
+				<label for="questionSix">Who is the director of the Suicide Squad?</label>
+				<select class="form-control" id="questionSix">
+					<option>Choose...</option>
+					<option>Sarge Steel</option>
+					<option>Lex Luther</option>
+					<option>Amanda Waller</option>
+					<option>Bruce Wayne</option>
+					<option>John Ostrander</option>
+					<option>Kim Yale</option>
+					<option>Ronald Reagan</option>
+					<option>Rick Flag, Jr.</option>
+				</select>
+				</div>
+				
+				<div class="form-group">
+				<input class="btn btn-success" type="button" value="Submit">
+				<input class="btn btn-default" type="reset" value="Start Over">
+				</div>
+				
+			</form>
+		</section>
+	</div>
+</div>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
